@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    
+
+    <style>
+      * {
+        font-family: "Lora", serif;
+      }
+      span {
+        padding: 15px;
+        cursor: pointer;
+      }
+      .content {
+        max-width: 400px;
+        margin: auto;
+        margin-top: 100px;
+      }
+      .content>.form-group{
+          word-spacing:4px;
+          font-size: 30px;
+          font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+          margin-top: 30px;
+          color: chocolate;
+      }
+      input{
+          width: 400px;
+          height: 30px;
+          border-radius: 20px;
+          padding-left: 40px;
+          color: darkgreen;
+      }
+      .btnn {
+        width: 450px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-left: 565px;
+        margin-top: 40px;
+        height: 40px;
+          border-radius: 20px;
+          background-color: rgb(236, 116, 116);
+      }
+    </style>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-light justify-content-end"
+      style="background-color: #e3f2fd; padding-right: 80px"
+    >
+      <span class="h4" onclick="(location.href='Home.html')">Home</span>
+      <span class="h4">Login</span>
+      <span class="h4" onclick="(location.href='Signup.html')">Signup</span>
+    </nav>
+
+    <form class="content" id="form_input">
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email address:</label>
+        <input
+          type="email"
+          class="form-control"
+          id="email"
+          aria-describedby="emailHelp"
+          placeholder="Enter email"
+        />
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Password:</label>
+        <input
+          type="password"
+          class="form-control"
+          id="password"
+          placeholder="Password"
+        />
+      </div>
+      <div class="form-group">Login:</div>
+    </form>
+    <button  
+      
+      type="button"
+      class="btnn btn btn-outline-info" 
+      onclick="loginn(event)"
+      id="show">Login</button>
+    
+  
+  <script src="login1.js">
+     
+</script>
+</body>
+</html>
